@@ -1,0 +1,387 @@
+
+/* X COVER GRAPHICS — WORK GALLERY */
+
+.gallery-page {
+    background: #ffffff;
+    min-height: 75vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* INTRO */
+
+.gallery-intro {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 65px 5% 35px;
+}
+
+.gallery-eyebrow {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #4167f2;
+}
+
+.gallery-intro h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(40px, 6vw, 76px);
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 1.15;
+    color: #172c70;
+    margin: 15px 0;
+}
+
+.gallery-intro h1 span {
+    color: #4167f2;
+}
+
+.gallery-intro p {
+    max-width: 650px;
+    font-size: clamp(15px, 1.6vw, 19px);
+    line-height: 1.7;
+    color: #5b6480;
+}
+
+/* FILTERS */
+
+.gallery-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4% 80px;
+}
+
+.gallery-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.gallery-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-filter {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #dce3f2;
+    background: #ffffff;
+    color: #24409c;
+    border-radius: 30px;
+    padding: 10px 18px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.gallery-filter:hover,
+.gallery-filter.active {
+    background: #24409c;
+    color: #ffffff;
+    border-color: #24409c;
+}
+
+.gallery-filter:focus-visible,
+.gallery-card:focus-visible {
+    outline: 3px solid #4167f2;
+    outline-offset: 3px;
+}
+
+.gallery-count {
+    font-size: 13px;
+    color: #788198;
+}
+
+/* PINTEREST-STYLE MASONRY */
+
+.masonry-gallery {
+    columns: 4;
+    column-gap: 18px;
+}
+
+.gallery-card {
+    display: block;
+    width: 100%;
+    margin: 0 0 18px;
+    padding: 0;
+    border: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #edf1f8;
+    break-inside: avoid;
+    position: relative;
+    cursor: zoom-in;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.gallery-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.gallery-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.16);
+}
+
+.gallery-card-caption {
+    display: block;
+    padding: 12px 14px;
+    background: #ffffff;
+}
+
+.gallery-card-title {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #172c70;
+}
+
+.gallery-card-category {
+    display: block;
+    font-size: 11px;
+    color: #7a859a;
+    margin-top: 4px;
+}
+
+.gallery-empty {
+    text-align: center;
+    padding: 60px 15px;
+    color: #69758c;
+}
+
+/* FULL-SCREEN IMAGE VIEWER */
+
+.gallery-lightbox:not([hidden]) {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(7, 13, 35, 0.96);
+    padding: 55px 20px 25px;
+}
+
+.lightbox-content {
+    text-align: center;
+    max-width: 100%;
+}
+
+.lightbox-content img {
+    display: block;
+    max-width: 95vw;
+    max-height: 78vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin: auto;
+}
+
+.lightbox-content p {
+    font-family: 'Outfit', sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 42px;
+    cursor: pointer;
+}
+
+/* CALL TO ACTION */
+
+.gallery-cta {
+    text-align: center;
+    background: linear-gradient(
+        120deg,
+        #172c70,
+        #4167f2
+    );
+    padding: 60px 20px;
+    color: #ffffff;
+}
+
+.gallery-cta h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(24px, 3vw, 36px);
+}
+
+.gallery-cta p {
+    margin: 10px 0 25px;
+}
+
+.gallery-cta a {
+    display: inline-block;
+    background: #d7ff00;
+    color: #172c70;
+    padding: 13px 25px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+    .masonry-gallery {
+        columns: 3;
+    }
+}
+
+@media (max-width: 750px) {
+    .masonry-gallery {
+        columns: 2;
+        column-gap: 12px;
+    }
+
+    .gallery-card {
+        margin-bottom: 12px;
+    }
+
+    .gallery-intro {
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 420px) {
+    .masonry-gallery {
+        columns: 2;
+        column-gap: 8px;
+    }
+
+    .gallery-card {
+        margin-bottom: 8px;
+        border-radius: 8px;
+    }
+
+    .gallery-card-caption {
+        padding: 9px;
+    }
+
+    .gallery-card-title {
+        font-size: 10px;
+    }
+
+    .gallery-filter {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gallery-card,
+    .gallery-filter {
+        transition: none;
+    }
+}
+
+/* =========================================
+   GALLERY INTRO — SPACING & TYPOGRAPHY
+   ========================================= */
+
+/* Bring introduction closer to the header */
+.gallery-intro {
+    max-width: 1400px;
+    padding: 20px 4% 25px;
+    margin: 0 auto;
+}
+
+/* Smaller, lighter heading */
+.gallery-intro h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+    margin: 8px 0 6px;
+}
+
+/* Make the paragraph use more horizontal space */
+.gallery-intro p {
+    max-width: none;
+    width: 100%;
+    font-size: clamp(14px, 1.4vw, 17px);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Keep the filter buttons close to the introduction */
+.gallery-toolbar {
+    margin-bottom: 20px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 650px) {
+    .gallery-intro {
+        padding: 20px 5% 20px;
+    }
+
+    .gallery-intro h1 {
+        font-size: clamp(30px, 8vw, 40px);
+        letter-spacing: -1px;
+    }
+
+    .gallery-intro p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+/* =========================================
+   GALLERY HEADER ALIGNMENT & SPACING
+   ========================================= */
+
+/* Align header content closer to the left edge */
+.site-header .header-container {
+    max-width: none;
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+/* Reduce space below the header */
+.site-header .header-container {
+    min-height: 75px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/* Bring the portfolio introduction closer */
+.gallery-intro {
+    padding-top: 5px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 650px) {
+    .site-header .header-container {
+        min-height: 65px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .gallery-intro {
+        padding-top: 8px;
+    }
+}

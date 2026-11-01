@@ -1,0 +1,1007 @@
+
+/* =========================================
+   X COVER GRAPHICS — ABOUT US PAGE
+   ========================================= */
+
+:root {
+    --about-blue: #24409c;
+    --about-navy: #172b63;
+    --about-red: #d94b50;
+    --about-lime: #d7ff00;
+    --about-text: #333b4d;
+    --about-muted: #697386;
+}
+
+/* GENERAL ABOUT PAGE */
+
+.about-hero,
+.about-section {
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+/* =========================================
+   ABOUT INTRODUCTION
+   ========================================= */
+
+.about-hero {
+    padding-top: 12px;
+    padding-bottom: 55px;
+}
+
+.about-eyebrow {
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--about-red);
+    margin: 0 0 16px;
+}
+
+.about-hero h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(40px, 6vw, 78px);
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -2px;
+    color: var(--about-navy);
+    margin: 0 0 18px;
+}
+
+.about-hero h1 span {
+    color: var(--about-blue);
+}
+
+.about-lead {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(15px, 1.6vw, 19px);
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--about-text);
+    max-width: 1000px;
+    margin: 0;
+}
+
+.about-hero-line {
+    width: 90px;
+    height: 3px;
+    background: var(--about-red);
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* =========================================
+   ABOUT CONTENT SECTIONS
+   ========================================= */
+
+.about-section {
+    padding-top: 60px;
+    padding-bottom: 65px;
+}
+
+.about-section-heading {
+    margin-bottom: 28px;
+}
+
+.section-number {
+    display: inline-block;
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: var(--about-red);
+    margin-bottom: 14px;
+}
+
+.about-section h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    color: var(--about-navy);
+    margin: 0;
+}
+
+.about-section h2 span {
+    color: var(--about-blue);
+}
+
+/* =========================================
+   PARAGRAPHS
+   ========================================= */
+
+.about-text {
+    max-width: 1050px;
+}
+
+.about-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.95;
+    color: var(--about-text);
+    margin: 0 0 20px;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================================
+   CREATIVE PHILOSOPHY
+   ========================================= */
+
+.philosophy-section {
+    max-width: none;
+    background: #f5f7fc;
+    padding-top: 70px;
+    padding-bottom: 75px;
+}
+
+.philosophy-section .about-section-heading,
+.philosophy-section .about-text {
+    max-width: 1288px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================================
+   RESPONSIVE TABLETS
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .about-hero,
+    .about-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .about-hero {
+        padding-top: 10px;
+        padding-bottom: 35px;
+    }
+
+    .about-section {
+        padding-top: 45px;
+        padding-bottom: 50px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+        line-height: 1.85;
+    }
+}
+
+/* =========================================
+   RESPONSIVE MOBILE
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .about-hero {
+        padding-top: 8px;
+        padding-bottom: 30px;
+    }
+
+    .about-eyebrow {
+        font-size: 9px;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+    }
+
+    .about-hero h1 {
+        font-size: clamp(36px, 9vw, 48px);
+        letter-spacing: -1px;
+        margin-bottom: 14px;
+    }
+
+    .about-lead {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .about-hero-line {
+        margin-top: 22px;
+        width: 65px;
+    }
+
+    .about-section {
+        padding-top: 35px;
+        padding-bottom: 40px;
+    }
+
+    .about-section-heading {
+        margin-bottom: 20px;
+    }
+
+    .section-number {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .about-section h2 {
+        font-size: clamp(29px, 7vw, 38px);
+        letter-spacing: -0.7px;
+    }
+
+    .about-text p {
+        font-size: 13px;
+        line-height: 1.85;
+        margin-bottom: 16px;
+    }
+}
+
+
+/* =========================================
+   WHAT WE DO — SERVICES
+   ========================================= */
+
+.services-section .about-text {
+    margin-bottom: 35px;
+}
+
+.about-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.about-service-card {
+    background: #ffffff;
+    border: 1px solid #e5eaf3;
+    border-radius: 14px;
+    padding: 28px 24px;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                border-color 0.25s ease;
+}
+
+.about-service-card:hover {
+    transform: translateY(-5px);
+    border-color: #c4d0f0;
+    box-shadow: 0 12px 30px rgba(23, 43, 99, 0.07);
+}
+
+.service-index {
+    display: inline-block;
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--about-red);
+    margin-bottom: 22px;
+}
+
+.about-service-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--about-navy);
+    margin: 0 0 13px;
+}
+
+.about-service-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.85;
+    color: var(--about-text);
+    margin: 0;
+}
+
+/* =========================================
+   CREATIVE TOOLKIT
+   ========================================= */
+
+.toolkit-section {
+    max-width: none;
+    background: #f5f7fc;
+}
+
+.toolkit-section > .about-section-heading,
+.toolkit-section > .about-text,
+.toolkit-section > .toolkit-grid,
+.toolkit-section > .toolkit-note {
+    max-width: 1288px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.toolkit-section > .about-text {
+    margin-bottom: 35px;
+}
+
+.toolkit-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.tool-card {
+    min-width: 0;
+    background: #ffffff;
+    border: 1px solid #e5eaf3;
+    border-radius: 16px;
+    padding: 28px 22px;
+    text-align: center;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(23, 43, 99, 0.08);
+}
+
+.tool-logo {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tool-logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.tool-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    color: var(--about-navy);
+    margin: 0 0 8px;
+}
+
+.tool-category {
+    display: block;
+    font-family: 'Outfit', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    color: var(--about-red);
+    margin-bottom: 18px;
+}
+
+.tool-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.85;
+    color: var(--about-text);
+    margin: 0;
+}
+
+.toolkit-note {
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--about-muted);
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* =========================================
+   RESPONSIVE SERVICES & TOOLKIT
+   ========================================= */
+
+@media (max-width: 1000px) {
+    .about-services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .toolkit-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .about-services-grid,
+    .toolkit-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .about-service-card,
+    .tool-card {
+        padding: 24px 20px;
+    }
+
+    .tool-logo {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 16px;
+    }
+
+    .about-service-card h3,
+    .tool-card h3 {
+        font-size: 19px;
+    }
+}
+
+/* =========================================
+   OUR CREATIVE PROCESS
+   ========================================= */
+
+.process-section > .about-text {
+    margin-bottom: 36px;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.process-card {
+    min-width: 0;
+    padding: 30px 24px;
+    border: 1px solid #e5eaf3;
+    border-radius: 16px;
+    background: #ffffff;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.process-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(23, 43, 99, 0.07);
+}
+
+.process-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--about-blue);
+    color: var(--about-lime);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.process-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--about-navy);
+    margin: 0 0 12px;
+}
+
+.process-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--about-text);
+    margin: 0;
+}
+
+/* =========================================
+   WHY CHOOSE US
+   ========================================= */
+
+.why-section {
+    max-width: none;
+    background: #f5f7fc;
+}
+
+.why-section > .about-section-heading,
+.why-section > .about-text,
+.why-section > .why-grid {
+    max-width: 1288px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.why-section > .about-text {
+    margin-bottom: 35px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.why-card {
+    background: #ffffff;
+    border: 1px solid #e5eaf3;
+    border-radius: 16px;
+    padding: 30px 28px;
+    transition: transform 0.25s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-4px);
+}
+
+.why-accent {
+    display: block;
+    width: 40px;
+    height: 3px;
+    border-radius: 5px;
+    background: var(--about-red);
+    margin-bottom: 22px;
+}
+
+.why-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--about-navy);
+    margin: 0 0 12px;
+}
+
+.why-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.85;
+    color: var(--about-text);
+    margin: 0;
+}
+
+/* =========================================
+   CONTACT SECTION
+   ========================================= */
+
+/* =========================================
+   RESPONSIVE LAYOUT
+   ========================================= */
+
+@media (max-width: 1050px) {
+    .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .process-grid,
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .process-card,
+    .why-card {
+        padding: 24px 20px;
+    }
+
+    .about-contact {
+        padding: 65px 5%;
+    }
+
+    .about-contact h2 {
+        font-size: clamp(32px, 8vw, 43px);
+    }
+
+    .about-contact-inner > p:not(.about-contact-signature) {
+        font-size: 13px;
+    }
+
+    .about-contact-actions {
+        flex-direction: column;
+    }
+
+    .about-contact-btn {
+        width: 100%;
+    }
+
+    .about-contact-signature {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .process-card,
+    .why-card,
+    .about-contact-btn {
+        transition: none;
+    }
+}
+
+/* ABOUT PAGE FOOTER */
+
+.about-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 25px 4%;
+    background: #ffffff;
+}
+
+.about-footer p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #697386;
+    margin: 0;
+}
+
+@media (max-width: 650px) {
+    .about-footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 22px 5%;
+    }
+}
+
+
+/* =========================================
+   COMPACT ABOUT CONTACT STRIP
+   ========================================= */
+
+.about-contact {
+    background: #172b63;
+    padding: 22px 4%;
+    text-align: center;
+}
+
+.about-contact-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-eyebrow {
+    display: block;
+    color: #d7ff00;
+    font-family: 'Outfit', sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.about-contact h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(13px, 1.5vw, 17px);
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: #ffffff;
+    margin: 0 0 12px;
+}
+
+.about-contact-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.about-contact-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    min-height: 36px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.primary-btn {
+    background: #d7ff00;
+    color: #172b63;
+    border: 1px solid #d7ff00;
+}
+
+.secondary-btn {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.about-contact-btn:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 650px) {
+    .about-contact {
+        padding: 18px 5%;
+    }
+
+    .about-contact h2 {
+        font-size: 13px;
+    }
+
+    .about-contact-actions {
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .about-contact-btn {
+        width: auto;
+        min-height: 36px;
+        font-size: 10px;
+        padding: 8px 12px;
+    }
+}
+
+
+/* =========================================
+   ABOUT PAGE — COMPACT REFINEMENT
+   ========================================= */
+
+/* Reduce overall section spacing */
+.about-section {
+    padding-top: 28px;
+    padding-bottom: 30px;
+}
+
+/* Reduce space below the introduction */
+.about-hero {
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+/* Make the main introduction title smaller */
+.about-hero h1 {
+    font-size: clamp(30px, 3.5vw, 46px);
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+/* Reduce the introductory text */
+.about-lead {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Reduce decorative spacing */
+.about-hero-line {
+    margin-top: 15px;
+}
+
+/* Smaller section headings */
+.about-section h2 {
+    font-size: clamp(24px, 2.5vw, 34px);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-bottom: 0;
+}
+
+/* Reduce spacing around section labels */
+.about-section-heading {
+    margin-bottom: 14px;
+}
+
+.section-number {
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
+}
+
+/* Bring paragraphs closer together */
+.about-text p {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+/* Reduce spacing before cards */
+.services-section .about-text,
+.toolkit-section > .about-text,
+.process-section > .about-text,
+.why-section > .about-text {
+    margin-bottom: 18px;
+}
+
+/* Make card layouts more compact */
+.about-services-grid,
+.toolkit-grid,
+.process-grid,
+.why-grid {
+    gap: 12px;
+}
+
+/* Reduce internal card spacing */
+.about-service-card,
+.tool-card,
+.process-card,
+.why-card {
+    padding: 18px;
+}
+
+/* Smaller card headings */
+.about-service-card h3,
+.tool-card h3,
+.process-card h3,
+.why-card h3 {
+    font-size: 17px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+/* Compact card descriptions */
+.about-service-card p,
+.tool-card p,
+.process-card p,
+.why-card p {
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+/* Reduce spacing around card labels */
+.service-index {
+    margin-bottom: 10px;
+}
+
+.tool-logo {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 12px;
+}
+
+.tool-category {
+    font-size: 9px;
+    margin-bottom: 10px;
+}
+
+.process-number {
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.why-accent {
+    margin-bottom: 12px;
+}
+
+/* Reduce extra space under the toolkit */
+.toolkit-note {
+    margin-top: 15px;
+}
+
+/* =========================================
+   MOBILE REFINEMENT
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .about-section {
+        padding-top: 22px;
+        padding-bottom: 24px;
+    }
+
+    .about-hero {
+        padding-top: 5px;
+        padding-bottom: 18px;
+    }
+
+    .about-hero h1 {
+        font-size: 30px;
+    }
+
+    .about-section h2 {
+        font-size: 24px;
+    }
+
+    .about-text p {
+        font-size: 12px;
+        line-height: 1.7;
+        margin-bottom: 10px;
+    }
+
+    .about-services-grid,
+    .toolkit-grid,
+    .process-grid,
+    .why-grid {
+        gap: 10px;
+    }
+
+    .about-service-card,
+    .tool-card,
+    .process-card,
+    .why-card {
+        padding: 16px;
+    }
+}
+
+
+/* =========================================
+   ABOUT PAGE — SUBTLE PHOTO BACKGROUND
+   ========================================= */
+
+/* Keep the page background white */
+body {
+    background: #ffffff;
+}
+
+/* Background photo with very low opacity */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: url("../assets/images/about-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Keep all page content above the background */
+body > header,
+body > main,
+body > footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* Allow the image to show through the pale sections */
+.philosophy-section,
+.toolkit-section,
+.why-section {
+    background: rgba(245, 247, 252, 0.85);
+}
+
+/* =========================================
+   ABOUT PAGE — FULL-WIDTH TEXT ALIGNMENT
+   ========================================= */
+
+/* Let paragraphs use the available section width */
+.about-text {
+    width: 100%;
+    max-width: none;
+}
+
+/* Remove narrower limits from pale sections */
+.philosophy-section .about-text,
+.toolkit-section > .about-text,
+.why-section > .about-text {
+    max-width: none;
+}
+
+/* Keep text aligned with the page margins */
+.about-text p {
+    width: 100%;
+    max-width: none;
+    text-align: left;
+}
+
+/* Make section content span the available width */
+.about-section {
+    max-width: none;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+    .about-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
