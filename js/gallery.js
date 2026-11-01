@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const gallery = document.getElementById("masonry-gallery");
     const filters = document.getElementById("gallery-filters");
-    const count = document.getElementById("gallery-count");
+    /*const count = document.getElementById("gallery-count");*/
     const empty = document.getElementById("gallery-empty");
 
     const lightbox = document.getElementById("gallery-lightbox");
@@ -92,8 +92,8 @@ document.addEventListener("DOMContentLoaded", () => {
             gallery.appendChild(card);
         });
 
-        count.textContent = visible.length +
-            (visible.length === 1 ? " Project" : " Projects");
+       /* count.textContent = visible.length +
+            (visible.length === 1 ? " Project" : " Projects");*/
 
         empty.hidden = visible.length !== 0;
     }
