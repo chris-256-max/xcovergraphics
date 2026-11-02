@@ -1005,3 +1005,32 @@ body > footer {
         padding-right: 5%;
     }
 }
+/* ABOUT US — BODY TEXT COLORS */
+
+/* Introductory message */
+.about-lead {
+    color: #243B70;
+}
+
+/* Main descriptive paragraphs */
+.about-text p {
+    color: #243B70;
+}
+
+/* Text inside service, tool, process and value cards */
+.about-service-card p,
+.tool-card p,
+.process-card p,
+.why-card p {
+    color: #243B70;
+}
+
+/* Additional toolkit description */
+.toolkit-note {
+    color: #243B70;
+}
+
+body,
+body * {
+    font-family: 'DM Sans', sans-serif !important;
+}

@@ -1270,3 +1270,10 @@ body {
         margin-top: 5px;
     }
 }
+
+/* TEMPORARY FONT TEST — DM SANS */
+
+body,
+body * {
+    font-family: 'DM Sans', sans-serif !important;
+}
