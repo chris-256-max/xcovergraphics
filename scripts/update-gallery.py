@@ -20,7 +20,8 @@ projects = []
 
 for image in sorted(
     GALLERY.rglob("*"),
-    key=lambda p: natural_key(p.relative_to(GALLERY))
+    key=lambda p: p.stat().st_mtime_ns if p.is_file() else 0,
+    reverse=True
 ):
     if not image.is_file():
         continue
