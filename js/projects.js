@@ -1,8 +1,13 @@
 window.XCOVER_PROJECTS = [
   {
-    "title": "New week.jpg",
+    "title": "Friday",
     "category": "Other",
-    "image": "../assets/images/gallery/Other/New week.jpg.jpeg"
+    "image": "../assets/images/gallery/Other/Friday.jpg"
+  },
+  {
+    "title": "New week",
+    "category": "Other",
+    "image": "../assets/images/gallery/Other/New week.jpg"
   },
   {
     "title": "Independence day",
