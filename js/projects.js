@@ -1,5 +1,15 @@
 window.XCOVER_PROJECTS = [
   {
+    "title": "Luma Fizz",
+    "category": "Branding",
+    "image": "../assets/images/gallery/Branding/Luma Fizz.jpg"
+  },
+  {
+    "title": "Fitness Class",
+    "category": "Posters",
+    "image": "../assets/images/gallery/Posters/Fitness Class.jpg"
+  },
+  {
     "title": "Friday",
     "category": "Other",
     "image": "../assets/images/gallery/Other/Friday.jpg"
