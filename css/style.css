@@ -1277,3 +1277,20 @@ body,
 body * {
     font-family: 'DM Sans', sans-serif !important;
 }
+
+/* HOMEPAGE — PINTEREST LINK */
+
+a[href*="pinterest.com"] {
+    color: #D7FF00;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a[href*="pinterest.com"]:hover {
+    color: #E8FF66;
+    text-decoration: underline;
+}
+
+a[href*="pinterest.com"]:visited {
+    color: #D7FF00;
+}
