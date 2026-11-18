@@ -101,9 +101,17 @@
 
 /* PINTEREST-STYLE MASONRY */
 
+/* ROW-ORDERED PINTEREST MASONRY */
+
 .masonry-gallery {
-    columns: 4;
-    column-gap: 18px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+}
+
+.masonry-column {
+    flex: 1;
+    min-width: 0;
 }
 
 .gallery-card {
@@ -253,8 +261,7 @@
 
 @media (max-width: 750px) {
     .masonry-gallery {
-        columns: 2;
-        column-gap: 12px;
+        gap:12px;
     }
 
     .gallery-card {
@@ -268,8 +275,8 @@
 
 @media (max-width: 420px) {
     .masonry-gallery {
-        columns: 2;
-        column-gap: 8px;
+        
+        gap: 8px;
     }
 
     .gallery-card {

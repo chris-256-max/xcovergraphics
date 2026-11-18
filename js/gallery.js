@@ -50,13 +50,29 @@ document.addEventListener("DOMContentLoaded", () => {
     function renderGallery() {
         gallery.replaceChildren();
 
+        // Create responsive masonry columns
+        const columnCount = window.innerWidth <= 750
+            ? 2
+            : window.innerWidth <= 1100
+                ? 3
+                : 4;
+
+        const columns = [];
+
+        for (let i = 0; i < columnCount; i++) {
+            const column = document.createElement("div");
+            column.className = "masonry-column";
+            columns.push(column);
+            gallery.appendChild(column);
+        }
+
         const visible = activeCategory === "All Works"
             ? projects
             : projects.filter(
                 project => project.category === activeCategory
             );
 
-        visible.forEach(project => {
+        visible.forEach((project,index) => {
             const card = document.createElement("button");
             card.className = "gallery-card";
             card.type = "button";
@@ -89,7 +105,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 openLightbox(project);
             });
 
-            gallery.appendChild(card);
+            const columnIndex = index % columnCount;
+            columns[columnIndex].appendChild(card);
         });
 
        /* count.textContent = visible.length +
@@ -144,4 +161,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     renderFilters();
     renderGallery();
+
+    let resizeTimer;
+
+    window.addEventListener("resize", () => {
+        clearTimeout(resizeTimer);
+
+        resizeTimer = setTimeout(() => {
+            renderGallery();
+        }, 200);
+    });
 });
