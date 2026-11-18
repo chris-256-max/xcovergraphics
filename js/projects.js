@@ -1,5 +1,20 @@
 window.XCOVER_PROJECTS = [
   {
+    "title": "Advert",
+    "category": "Social Media",
+    "image": "../assets/images/gallery/Social Media/Advert.jpg"
+  },
+  {
+    "title": "Social studio",
+    "category": "Logos",
+    "image": "../assets/images/gallery/Logos/Social studio.jpg"
+  },
+  {
+    "title": "Modern designs",
+    "category": "Social Media",
+    "image": "../assets/images/gallery/Social Media/Modern designs.jpg"
+  },
+  {
     "title": "Luma Fizz",
     "category": "Branding",
     "image": "../assets/images/gallery/Branding/Luma Fizz.jpg"
