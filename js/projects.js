@@ -1,5 +1,10 @@
 window.XCOVER_PROJECTS = [
   {
+    "title": "HotPot Kitchen",
+    "category": "Branding",
+    "image": "../assets/images/gallery/Branding/HotPot Kitchen.jpg"
+  },
+  {
     "title": "Advert",
     "category": "Social Media",
     "image": "../assets/images/gallery/Social Media/Advert.jpg"
