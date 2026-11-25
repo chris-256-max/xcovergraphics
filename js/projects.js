@@ -1,5 +1,10 @@
 window.XCOVER_PROJECTS = [
   {
+    "title": "Mubasa Festival.jpg",
+    "category": "Posters",
+    "image": "../assets/images/gallery/Posters/Mubasa Festival.jpg.jpeg"
+  },
+  {
     "title": "HotPot Kitchen",
     "category": "Branding",
     "image": "../assets/images/gallery/Branding/HotPot Kitchen.jpg"
